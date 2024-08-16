@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>💙 Happy Birthday Sachi 💙</title>
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .birthdayimg {
+          background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          color: red;
+          font-size: 35px;
+        }
+        
+        .middle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        
+        hr {
+          color: black;
+          margin: auto;
+          width: 40%;
+        }
+        </style>
+    </head>
+
+<body>
+<div class="birthdayimg">
+  <div class="middle">
+    <h1>HAPPY BIRTHDAY SACHI✨</h1>
+    <hr>
+    <p id="amx" style="font-size:80px"></p>
+  </div>
+</div>
+
+<div class="img">
+  <div class="mainimg">
+    <img src="/assets/main.jpg">
+  </div>
+
+  <div class="img1">
+    <img src="/assets/1.png">
+  </div>
+  <div class="img2">
+    <img src="/assets/2.png">
+  </div>
+  <div class="img3">
+    <img src="/assets/3.png">
+  </div>
+  <div class="img4">
+    <img src="/assets/4.png">
+  </div>
+  <div class="img5">
+    <img src="/assets/5.png">
+  </div>
+  <div class="img6">
+    <img src="/assets/6.png">
+  </div>
+  <div class="img7">
+    <img src="/assets/7.png">
+  </div>
+  <div class="img8">
+    <img src="/assets/8.png">
+  </div>
+  <div class="img9">
+    <img src="/assets/9.png">
+  </div>
+  <div class="img10">
+    <img src="/assets/10.png">
+  </div>
+</div>
+
+<script>
+var countDownDate = new Date("Jan 9, 2022 00:00:00").getTime();
+
+var countdownfunction = setInterval(function() {
+
+  var now = new Date().getTime();
+var distance = countDownDate - now;
+
+ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("amx").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
+
+ if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("amx").innerHTML = "Memories";
+    window.location = "#";
+}
+
+}, 1000);
+</script>
+
+</body>
+</html>
