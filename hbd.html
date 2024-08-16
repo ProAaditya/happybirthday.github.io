@@ -1,185 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>💙 Happy Birthday Sachi 💙</title>
-        <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-        }
-        
-        .birthdayimg {
-          background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
-          height: 100%;
-          background-position: center;
-          background-size: cover;
-          position: relative;
-          color: red;
-          font-size: 35px;
-        }
-        
-        .middle {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        
-        hr {
-          color: black;
-          margin: auto;
-          width: 40%;
-        }
-
-        /* .box {
-    height: 400px;
-    width: 23%;
-    background-color: white;
-    padding: 20px 0px 15px;
-    margin-top: 1rem;
-}
-
-.box-img {
-    height: 500px;
-    background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: flex-start;
-}
-
-.img1 {
-    background-image: url(assets/main.jpg);
-    rotate: 270deg;
-}
-
-.img2 {
-    background-image: url(assets/1.png);
-}
-
-.img3 {
-    background-image: url(assets/2.png);
-}
-
-.img4 {
-    background-image: url(assets/3.png);
-}
-
-.img5 {
-    background-image: url(assets/4.png);
-}
-
-.img6 {
-    background-image: url(assets/5.png);
-}
-
-.img7 {
-    background-image: url(assets/6.png);
-}
-
-.img8 {
-    background-image: url(assets/7.png);
-}
-
-.img9 {
-    background-image: url(assets/8.png);
-}
-
-.img10 {
-    background-image: url(assets/9.png);
-} */
-
-        </style>
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙 HAPPY BIRTHDAY SACHI 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<div class="birthdayimg">
-  <div class="middle">
-    <a href="index.html"><h1>HAPPY BIRTHDAY SACHI✨</h1></a>
-    <hr>
-    <p id="amx" style="font-size:80px"></p>
-  </div>
-</div>
+    <div class="container">
+        <div class="card">
+            <div class="outside">
+                <h1>Happy Birthday</h1>
+                <h3>My dear best friend,may god bless you with abundant joy on your birthday and always!<br>
+                    Thank you for always being by my side and having my back.</h3>
+                    <hr>
+                    <b><p>HOVER ME</p></b>
+            </div>
+            <div class="inside">
+                <img src="assets/cake.gif"/>
+                <h3>Sending you an infinite amount of love, joy, and happiness on your birthday!</h3>
+                <hr>
+                <p><a href="index.html">CLICK ME!</a></p>
+            </div>
+        </div>
 
-<!-- <div class="img">
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img1"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img2"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img3"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img4"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img5"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img6"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img7"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img8"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img9"></div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="box-content">
-        <div class="box-img img10"></div>
-    </div>
-  </div
-</div> -->
+        <div class="block">
+            <div class="frames frame1">
+                <img src="assets/1.png" alt="">
+                <p>Keep smiling,Keep shining</p>
+            </div>
+            <div class="frames frame2">
+                <img src="assets/4.png" alt="">
+                <p>On this occasion bring you lot of happiness and success
+                </p>
+            </div>
+            <div class="frames frame3">
+                <img src="assets/5.png" alt="">
+                <p>May God bless you on your birthday, and always</p>
+            </div>
+        </div>
 
-<script>
-var countDownDate = new Date("Jan 9, 2022 00:00:00").getTime();
-
-var countdownfunction = setInterval(function() {
-
-  var now = new Date().getTime();
-var distance = countDownDate - now;
-
- var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("amx").innerHTML = days + "D " + hours + "H "
-  + minutes + "M " + seconds + "S ";
-
- if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("amx").innerHTML = "Memories";
-    window.location = "#";
-}
-
-}, 1000);
-</script>
-
+    </div>
 </body>
 </html>
